@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+html,body{
+    margin:0px;
+    padding: 0px;
+    background-color: #201D1A;
+}
+
+/*grid*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*header*/
+header{
+    display: flex;/*
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/09/20/17/work-933061_960_720.jpg");*/
+    background-image: url("https://images.unsplash.com/photo-1583995808178-e24d55f52095?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    height: 200px;
+}
+#cabeza{
+    display: flex;
+    justify-content: center;
+}
+#cabeza img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/*nav*/
+
+.hamburger{
+    
+    background-color: #F57A14;
+    position: sticky;
+    top:0;
+    z-index: 999;
+}
+.hamburger img{
+    display:flex;
+    height: 50px;
+    width: 50px;
+    background-color: #F57A14;
+    
+    
+}
+.hamburger img:hover{
+    cursor: pointer;
+    
+
+}
+#op{
+    display: none;
+    position: sticky;
+    top: 50;
+    z-index: 999;
+    background-color: #F57A14;
+}
+#op ul{
+    display: block;
+    justify-content: space-around;
+    list-style: none;
+    align-items: stretch;
+    
+
+    
+}
+#op li{
+    text-decoration: none;
+    padding: 10px 0px 10px 0px;
+    flex-grow: 1;
+    display: flex;
+    
+    border-bottom: groove 1px #696867;
+    
+}
+#op a{
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #201D1A;
+    flex-grow: 1;
+    padding: 0px;
+    
+    /*border-left: groove 1px #201D1A ;
+    border-right: groove 1px #201D1A;*/
+    text-align: center;
+}
+/*#op a:hover{
+    zoom: 1.2;
+}/*
+
+/*main*/
+main{
+    
+    flex-grow: 1;
+    font-size: 20px;
+    color: #F0E8E0;
+    margin: 0px;
+    padding:0px;
+    border-bottom: 1px solid #F57A14;
+    
+
+}
+
+main h2{
+    margin-top: 10px;
+    text-align: center;
+    background-color: #F57A14;
+    color: #201D1A;
+}
+.texto{
+    margin: 10px;
+}
+
+.texto div{
+    display: flex;
+    justify-content: center;
+    
+}
+.texto div img{
+    width: 35%;
+    max-height: 300px;
+    border-radius: 10%;
+    
+}
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+}
+.rs, #lp img{
+    max-width: 50px;
+    min-height: 50px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: #F57A14;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.rs:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+#rs{
+    display: flex;
+    justify-content: center;
+}
+#lp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*listas*/
+#idioma{
+    list-style: circle;
+}
+
+/*educacion*/  /*exp*/
+#t-educacion a,#t-exp a{
+    color: #F57A14;
+    text-decoration: none;
+    
+}
+#t-educacion a:hover,#t-exp a:hover{
+    zoom: 1.2;
+}
+
+#rs a{
+    display: flex;
+    width:70px;
+    margin: 5px;
+    
+}
+
+/* Medium devices (tablets, 600px and up) */
+@media only screen  and (min-width: 768px) {
+    
+    /*nav*/
+    .hamburger img{
+        display:none;
+    }
+    #op{
+        display: block !important;
+
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #F57A14;
+    }
+    #op ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        align-items: stretch;
+
+
+
+    }
+    #op li{
+        text-decoration: none;
+        padding: 10px 0px 10px 0px;
+        flex-grow: 1;
+        display: flex;
+    }
+    #op a{
+        font-size: 100%;
+        font-weight: bold;
+        text-decoration: none;
+        color: #201D1A;
+        flex-grow: 1;
+        padding: 10px 0px 10px 0px;
+        border-left: groove 1px #201D1A ;
+        border-right: groove 1px #201D1A;
+        text-align: center;
+    }
+    #op a:hover{
+        zoom: 1.2;
+    }
+ 
+    
+    
+} 
+
