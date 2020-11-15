@@ -168,8 +168,9 @@ footer{
     justify-content: center;
 }
 /*listas*/
-#idioma{
-    list-style: circle;
+#idioma, #l-int{
+    list-style: square;
+    margin-left: 20px;
 }
 
 /*educacion*/  /*exp*/
