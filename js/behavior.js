@@ -7,9 +7,7 @@ function mostrarMenu(){
     }else{
         document.getElementById("op").style.display = 'block';
         
-    }
-
-    
+    }  
 }
 
 
